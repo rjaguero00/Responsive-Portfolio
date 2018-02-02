@@ -52,9 +52,10 @@ header ul li a{
 text-decoration:none;
 font-size:20px;
 font-weight:bold;
-color:red;
+color: red;
 padding: 15px;
 border-right: 1px solid white;
+border-left: 1px solid white;
 }
 
 header ul li a:hover{
@@ -129,10 +130,20 @@ text-decoration:underline;
   color: grey;
 }
 
-.image1, .image2, .image3, .image4{
+.image{
   float: left;
   position: relative;
   padding: 30px 25px 20px 40px;
+  /*width: 100%;  NOTE: use this for your media queries to get the right image sizes.  the img tag should autosize to the size of this div*/
+}
+
+#portfolio .image a{
+  /*display: inline-block;*/
+}
+
+#portfolio .image img{
+  width: 100%;
+  height: auto;
 }
 
 #text1a, #text2a, #text3a, #text4a{
@@ -176,6 +187,20 @@ text-decoration:underline;
 
 footer{
   border-top: 10px solid red;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  background-color: grey;
+  text-align: center;
+  font-size: 10px;
+  clear: both;
+  margin-top: 20px;
+}
+
+.footabout{
+  border-top: 10px solid red;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -184,8 +209,8 @@ footer{
   background-color: grey;
   text-align: center;
   font-size: 10px;
-  /*clear: both;*/
-  /*margin-top: 120px;*/
+  clear: both;
+  margin-top: 20px;
 }
 
 .footertext{
@@ -256,9 +281,23 @@ form {
     margin: auto;
     margin-bottom: 30px;
   }
+
+  .image{
+    width: 90%;
+    height: auto;
+    padding: 30px 25px 20px 20px;
+  }
+
+  #text1a, #text2a, #text3a, #text4a{
+    width: 90%;
+  }
+
   footer{
     position: relative;
     margin-top: 10px;
+  }
+  .footabout{
+    position: relative;
   }
   #portfolio{
     width: 60%;
@@ -267,7 +306,7 @@ form {
     width: 60%;
   }
   input, textarea{
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -277,6 +316,9 @@ form {
     width: 95%;
     margin: auto;
     margin-right: 0px;
+  }
+  h1{
+    text-align: center;
   }
   #connect{
     width: 100%;
@@ -293,6 +335,17 @@ form {
     margin-top: 10px;
     margin-bottom: 30px;
   }
+
+  .image{
+    width: 40%;
+    height: auto;
+    padding: 30px 25px 20px 22px;
+  }
+
+  #text1a, #text2a, #text3a, #text4a{
+    width: 83%;
+  }
+
   #portfolio{
     width: 95%;
   }
@@ -314,7 +367,7 @@ form {
     margin: auto;
   }
   #about{
-    width: 92%;
+    width: 94%;
   }
   #connect{
     width: 100%;
@@ -322,10 +375,45 @@ form {
   #portfolio{
     width: 92%;
   }
+
+  .image{
+    width: 90%;
+    height: auto;
+    padding: 30px 25px 20px 20px;
+  }
+
+  #text1a, #text2a, #text3a, #text4a{
+    width: 90%;
+  }
+
   #contact{
     width: 95%;
   }
+.eva, .gmail, .write{
+  max-width: 90%;
+}
+
   input, textarea{
-    width: 95%;
+    width: 80%;
+  }
+  header{
+    display: block;
+    clear: both;
+    width: 100%
+    margin: 0 auto;
+  }
+  .name{
+    width: 100%;
+    text-align: center;
+  }
+  header ul li{
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  nav{
+    text-align: center;
+    background-color: grey;
+    margin-bottom: 20px;
+
   }
 }
