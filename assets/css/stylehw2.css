@@ -352,6 +352,10 @@ form {
   #contact{
     width: 95%;
   }
+
+  footer{
+    position: relative;
+  }
   input, textarea{
     width: 120%;
   }
@@ -388,9 +392,13 @@ form {
 
   #contact{
     width: 95%;
+    height: 100%;
   }
 .eva, .gmail, .write{
   max-width: 90%;
+}
+footer{
+  position: relative;
 }
 
   input, textarea{
